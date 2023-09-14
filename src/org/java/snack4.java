@@ -20,9 +20,7 @@ public class snack4 {
 		
 		for (int i = 0; i < input.length(); i++) {
 
-			if (input.charAt(i) == input.charAt(input.length() - 1 - i)) {
-				pal = true;
-			}
+			if (input.charAt(i) == input.charAt(input.length() - 1 - i)) pal = true;
 		}
 		
 		if (pal) System.out.println(input + " è una parola palindroma");
