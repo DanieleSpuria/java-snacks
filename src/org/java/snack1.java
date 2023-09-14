@@ -8,14 +8,11 @@ public class snack1 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		int num = 0;
+		System.out.print("Inserisci un numero: ");
+		int num = scan.nextInt();
 		
-		do {
-			System.out.print("Inserisci un numero: ");
-			num = scan.nextInt();
-		} while (num % 2 != 0);
-		
-		System.out.println(num + " è un numero pari");
+		if (num % 2 == 0) System.out.println(num);
+		else System.out.println(num + 1);
 		
 		scan.close();
 	}
